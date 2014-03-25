@@ -6,7 +6,6 @@ var paths = {
   scripts: ['public/js/**/*.js']
 };
 
-// Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
 });
@@ -18,6 +17,7 @@ gulp.task('lint', function () {
 
 gulp.task('develop', function () {
   nodemon({ script: 'server.js', ext: 'html js', ignore: ['ignored.js'] })
+    .on('start', ['lint'])
     .on('restart', ['lint'])
 });
 
