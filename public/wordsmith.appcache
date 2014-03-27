@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# v1 - 2014-03-26
+
+CACHE
+lib/bower_components/angular/angular.min.js
+lib/bower_components/angular-route/angular-route.min.js
+lib/bower_components/firebase/firebase.js
+lib/bower_components/angularfire/angularfire.min.js
+js/app.js
+js/controller.js
+dictionary/english.txt
+
+NETWORK
+
+FALBACK
